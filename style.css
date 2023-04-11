@@ -27,7 +27,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #355723;
-    height:100%;
+    height:100px;
     padding: 1.5rem;
     width: 100%;
     color: white;
@@ -97,8 +97,9 @@
     background-color: #355723;;
     width: 30%;
     color: white;
-    height: 100%;
+    height: 64px;
     row-gap: 0.5rem;
+    overflow: hidden;
 }
 
 .main {
@@ -159,7 +160,7 @@ footer {
     align-items: center;
     padding-left:50px;
     font-weight: bold; 
-    min-height: 10vh;
+    height: 100px;
 }
 
 footer a {
