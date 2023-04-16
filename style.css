@@ -236,5 +236,18 @@ footer a {
 }
 
 
+/* ----------------index ADM-------------- */
 
+.header__messsage {
+    margin-right: 2rem ;
+}
 
+.header__span {
+    font-weight: bold;
+}
+
+.header__icon {
+    font-size: 2.5rem;
+    color: white;
+    margin-right: 2rem;
+}

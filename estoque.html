@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Imagem</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="nome"></td>
+            <td><input type="number" name="quantidade"></td>
+            <td><input type="number" name="preco"></td>
+            <td><input type="file" name="imagem"></td>
+            <td><button id="adicionar">Adicionar</button></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <script>
+        const adicionarBtn = document.querySelector('#adicionar');
+        const tbody = document.querySelector('tbody');
+      
+        adicionarBtn.addEventListener('click', () => {
+          const nome = document.querySelector('input[name="nome"]').value;
+          const quantidade = document.querySelector('input[name="quantidade"]').value;
+          const preco = document.querySelector('input[name="preco"]').value;
+          const imagem = document.querySelector('input[name="imagem"]').value;
+          
+          const tr = document.createElement('tr');
+          const tdNome = document.createElement('td');
+          const tdQuantidade = document.createElement('td');
+          const tdPreco = document.createElement('td');
+          const tdImagem = document.createElement('td');
+          const tdAcoes = document.createElement('td');
+          const editarBtn = document.createElement('button');
+          const excluirBtn = document.createElement('button');
+          
+          tdNome.textContent = nome;
+          tdQuantidade.textContent = quantidade;
+          tdPreco.textContent = preco;
+          tdImagem.innerHTML = `<img src="${imagem}">`;
+          editarBtn.textContent = 'Editar';
+          excluirBtn.textContent = 'Excluir';
+          
+          tdAcoes.appendChild(editarBtn);
+          tdAcoes.appendChild(excluirBtn);
+          
+          tr.appendChild(tdNome);
+          tr.appendChild(tdQuantidade);
+          tr.appendChild(tdPreco);
+          tr.appendChild(tdImagem);
+          tr.appendChild(tdAcoes);
+          
+          tbody.appendChild(tr);
+        });
+      </script>
+</body>
+</html>
