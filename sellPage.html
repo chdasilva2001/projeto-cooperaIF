@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b262613c7c.js"             crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <h1>Cooperaif</h1>
+        <form action="#" class="header__search">
+            <input type="search" class="header__search__input"  placeholder="Pesquisar...">
+            <button class="header__search__button">Buscar</button>
+        </form>
+        <a class="header__icon" href="#"><i class="fa-solid fa-bars"></i></a>
+    </header>
+    <button class="btn-back sell-back-button"><i class="fa-solid fa-arrow-left"></i>voltar</button>
+
+    <main>
+        <div class="all-products">
+            <h2>Registro de vendas</h2>
+            <div class="info-sell-products"><p>info products</p>
+                <div class="quantity-items"><button class="decrease">-</button>
+                <input type="text" class="quantity" value="0">
+                <button class="increase">+</button></div>
+            </div>
+            <div class="info-sell-products"><p>info products</p>
+                <div class="quantity-items"><button class="decrease">-</button>
+                <input type="text" class="quantity" value="0">
+                <button class="increase">+</button></div>
+            </div>
+            <div class="info-sell-products"><p>info products</p>
+                <div class="quantity-items"><button class="decrease">-</button>
+                <input type="text" class="quantity" value="0">
+                <button class="increase">+</button></div>
+            </div>
+            <div class="info-sell-products"><p>info products</p>
+                <div class="quantity-items"><button class="decrease">-</button>
+                <input type="text" class="quantity" value="0">
+                <button class="increase">+</button></div>
+            </div>
+            <div class="finish-sell">
+                <p>Valor total</p>
+                <p>R$ 400</p>
+                <button id="button-finish">Finalizar</button>
+            </div>
+        </div>
+    </div>
+    <div class="fade-modal-confirm hide"></div>
+    <div class="modal-confirm hide">
+        <div class="modal-header-confirm">
+            <p>confirmar?</p>
+            <div class="agroup-icon">
+                <a href="#"><i id="confirm" class="fas fa-check-circle fa-4x"></i></a>
+                <a href="#"><i id="no-confirm" class="fas fa-times-circle fa-4x"></i></a>  
+            </div>
+  
+        </div>
+    </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

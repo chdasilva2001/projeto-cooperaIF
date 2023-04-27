@@ -4,67 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b262613c7c.js"             crossorigin="anonymous"></script>
+    
 </head>
-<body>
-    <table>
+<body class="body-inventory">
+    <header class="header">
+        <h1>Cooperaif</h1>
+        <form action="#" class="header__search">
+            <input type="search" class="header__search__input"  placeholder="Pesquisar...">
+            <button class="header__search__button">Buscar</button>
+        </form>
+        <a class="header__icon" href="#"><i class="fa-solid fa-bars"></i></a>
+    </header>
+    <div class="subtitle-inventory">
+        <button class="btn-back"><i class="fa-solid fa-arrow-left"></i>voltar</button>
+        <p class="inventory">Estoque</p>
+    </div> 
+    <main>
+      <table>
         <thead>
           <tr>
             <th>Nome</th>
             <th>Quantidade</th>
             <th>Preço</th>
             <th>Imagem</th>
-            <th>Ações</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><input type="text" name="nome"></td>
-            <td><input type="number" name="quantidade"></td>
-            <td><input type="number" name="preco"></td>
-            <td><input type="file" name="imagem"></td>
-            <td><button id="adicionar">Adicionar</button></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button class="add-button" type="button">Adicionar</button></td>
           </tr>
         </tbody>
       </table>
+      <div class="fade-modal-inventory hide-inventory"></div>
+      <div class="modal-inventory hide-inventory">
+        <div class="add-product">
+          <h1>Cadastrar produto</h1>
+          <h2>Informações</h2>
+          <div>
+            <label for="product-name">Nome</label>
+            <input type="text" name="nome" id="product-name">
+          </div>
+          <div>
+            <label for="qtd-product">Quantidade</label>
+            <input type="number" name="quantidade" id="qtd-product">
+          </div>
+          <div>
+            <label for="product-price">Preço</label>
+            <input type="number" name="quantidade" id="product-price">
+          </div>
+          <div>
+            <label for="fileInput" class="labelFile">
+              Imagem
+              <input type="file" id="fileInput">
+            </label>
+          </div>
+          
+            <button class="cancel">Cancelar</button>
+            <button class="save">Salvar</button>
+  
+        </div>
+      </div>
       
-      <script>
-        const adicionarBtn = document.querySelector('#adicionar');
-        const tbody = document.querySelector('tbody');
-      
-        adicionarBtn.addEventListener('click', () => {
-          const nome = document.querySelector('input[name="nome"]').value;
-          const quantidade = document.querySelector('input[name="quantidade"]').value;
-          const preco = document.querySelector('input[name="preco"]').value;
-          const imagem = document.querySelector('input[name="imagem"]').value;
-          
-          const tr = document.createElement('tr');
-          const tdNome = document.createElement('td');
-          const tdQuantidade = document.createElement('td');
-          const tdPreco = document.createElement('td');
-          const tdImagem = document.createElement('td');
-          const tdAcoes = document.createElement('td');
-          const editarBtn = document.createElement('button');
-          const excluirBtn = document.createElement('button');
-          
-          tdNome.textContent = nome;
-          tdQuantidade.textContent = quantidade;
-          tdPreco.textContent = preco;
-          tdImagem.innerHTML = `<img src="${imagem}">`;
-          editarBtn.textContent = 'Editar';
-          excluirBtn.textContent = 'Excluir';
-          
-          tdAcoes.appendChild(editarBtn);
-          tdAcoes.appendChild(excluirBtn);
-          
-          tr.appendChild(tdNome);
-          tr.appendChild(tdQuantidade);
-          tr.appendChild(tdPreco);
-          tr.appendChild(tdImagem);
-          tr.appendChild(tdAcoes);
-          
-          tbody.appendChild(tr);
-        });
-      </script>
+
+    </main> 
+    <script src="main.js"></script>
 </body>
 </html>
