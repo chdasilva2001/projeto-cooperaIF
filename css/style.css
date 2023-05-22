@@ -178,7 +178,7 @@ footer {
     align-items: center;
     padding-left:50px;
     font-weight: bold; 
-    min-height: 100px;
+    height: auto ; 
 }
 
 footer a {
@@ -189,8 +189,8 @@ footer a {
     display: flex;
     flex-direction: column;
     width: auto;
-    line-height: 1.4rem;
-    padding-top:10px ;
+    line-height: 1.6rem;
+    padding:10px ;
     margin-right: 3rem;
 }
 
@@ -260,16 +260,8 @@ footer a {
 
 .header-agroup {
     display: flex;
-    /* width: 30%; */
+    justify-content: end;
     align-items: center;
-    justify-content: flex-end;
-}
-.header__messsage {
-    margin-right: 2rem ;
-}
-
-.header__span {
-    font-weight: bold;
 }
 
 .header__icon {

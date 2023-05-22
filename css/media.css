@@ -39,26 +39,20 @@
         margin-top: .7rem; 
     }
 
-    .header__search__input {
-        /* padding: 5px;
-        border-radius: 2px;
-        font-size: 12px; */
-    }
-
-    .header__search__button {
-        /* padding: 5px 10px;
-        border-radius: 2px; */
-    }
     .header h1 {
         font-size: 1.3rem;
     }
 
-    .header__button {
+    .header__button, .header-agroup {
         grid-column: 3;
     }
 
     .header__button a {
         font-size: .7rem;
+    }
+    .header__icon {
+        font-size: 1.5rem ;
+        margin-right: .5rem; 
     }
 
     .upper-title {
@@ -67,5 +61,13 @@
 
     .main {
         grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding-left: 0;
+    }
+
+    .contact {
+        margin-right: 0 ; 
     }
 }
