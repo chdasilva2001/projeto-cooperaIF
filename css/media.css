@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1028px) {
     .header {
         padding: 1rem;
     }
@@ -19,14 +19,18 @@
         width: auto;
     }
     
-    .main {
+    .main, .main__search {
         grid-template-columns: repeat(2, 1fr);
     }
-    .main__product_card {
-        font-size: 1.2rem;
-    }
 
+    .main__product_card {
+        font-size: 1.5rem;
+    }
+    footer {
+        font-size: 1.3rem
+    }
 }
+
 
 @media screen and (max-width: 428px) {
     .header {
@@ -63,11 +67,17 @@
         grid-template-columns: 1fr;
     }
 
+    .main__product_card {
+        font-size: 1.5rem
+    }
+
     footer {
-        padding-left: 0;
+        padding-left: 25px ; 
     }
 
     .contact {
+        font-size: .8rem ; 
         margin-right: 0 ; 
     }
+
 }
