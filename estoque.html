@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <script src="https://kit.fontawesome.com/b262613c7c.js"             crossorigin="anonymous"></script>
     <script type="module" src="./js/script.js" defer></script>
     <script type="module" src="./js/invetory.js" defer></script>
@@ -18,13 +19,15 @@
             <input type="search" class="header__search__input"  placeholder="Pesquisar...">
             <button class="header__search__button">Buscar</button>
         </form>
-        <a class="header__icon" href="#"><i class="fa-solid fa-bars"></i></a>
+        <div class="header-agroup">
+          <a class="header__icon" href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>    
     </header>
     <div class="subtitle-inventory">
         <button class="btn-back"><i class="fa-solid fa-arrow-left"></i>voltar</button>
-        <p class="inventory">Estoque</p>
     </div> 
-    <main>
+    <p class="inventory">ESTOQUE</p>
+    <main class="main-inventory">
       <table>
         <thead>
           <tr>
